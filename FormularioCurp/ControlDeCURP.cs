@@ -225,7 +225,7 @@ namespace FormularioCurp
 
         private void txtDigitosDiferenciales_TextChanged(object sender, EventArgs e)
         {
-            if (txtDigitosDiferenciales.Text.Length == 2)
+            if (txtDigitosDiferenciales.Text.Length == 2 && valCurpPrimeraFase())
             {
                 string ultimos2 = txtDigitosDiferenciales.Text.ToUpper();
                 Regex regex = new Regex("^[A-Z0-9][0-9]$");
